@@ -1,0 +1,27 @@
+%div
+  = link_to 'Files', user_repository_path(params[:user_id], params[:id])
+  = link_to 'Commits', user_repository_commits_path(params[:user_id], params[:id])
+%p#notice= notice
+%p
+  %b Path:
+%p
+  %b Slug:
+  = @repository.slug
+%div
+  #repo-view{:style => "float: left; margin: 5px; padding: 5px;"}
+  #blob-view{:style => "float: right; margin: 5px; padding: 5px;"}
+  %div{:style => "clear: both;"}
+​%div
+  = link_to 'Files', user_repository_path(params[:user_id], params[:id])
+  = link_to 'Commits', user_repository_commits_path(params[:user_id], params[:id])
+%p#notice= notice
+%p
+  %b Path:
+%p
+  %b Slug:
+  = @repository.slug
+%div
+  #repo-view{:style => "float: left; margin: 5px; padding: 5px;"}
+  #blob-view{:style => "float: right; margin: 5px; padding: 5px;"}
+  %div{:style => "clear: both;"}
+​
